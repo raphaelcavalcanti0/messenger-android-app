@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ConfigActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/config_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:background="@drawable/foto_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <ProgressBar
+        android:id="@+id/configProgressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/config_image"
+        app:layout_constraintEnd_toEndOf="@+id/config_image"
+        app:layout_constraintStart_toStartOf="@+id/config_image"
+        app:layout_constraintTop_toTopOf="@+id/config_image" />
+
+    <ImageView
+        android:id="@+id/btn_editNome"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/editar_nome"
+        android:src="@drawable/ic_edit_24"
+        app:layout_constraintBottom_toBottomOf="@+id/editName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editName"
+        app:layout_constraintTop_toTopOf="@+id/editName" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        app:layout_constraintEnd_toStartOf="@+id/btn_editNome"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/config_image" />
+
+    <ImageView
+        android:id="@+id/btn_editImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="76dp"
+        android:contentDescription="@string/editar_foto"
+        android:src="@drawable/ic_edit_24"
+        app:layout_constraintBottom_toBottomOf="@+id/config_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/config_image"
+        app:layout_constraintTop_toTopOf="@+id/config_image" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal"
+        android:text="@string/altera_noe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAlterar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <Button
+        android:id="@+id/buttonAlterar"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/alterar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancel"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.459" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "611858613257",
+    "project_id": "teste-firebase-10376",
+    "storage_bucket": "teste-firebase-10376.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611858613257:android:6f955e28ebf2d9d41e24d8",
+        "android_client_info": {
+          "package_name": "com.rcfin.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611858613257-hadcjccpbs2cacp5s5976drthemjcht5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rcfin.messenger",
+            "certificate_hash": "4faa7efa5ab5fa2125ce7d99757a141692fa5253"
+          }
+        },
+        {
+          "client_id": "611858613257-4k7tr2pc108t11jtqp1d7vbumltr86pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS3yscaRowo2TskpNlS_4um82Iu_Oou7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611858613257-4k7tr2pc108t11jtqp1d7vbumltr86pr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

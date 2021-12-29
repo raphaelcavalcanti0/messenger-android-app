@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_search"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item android:id="@+id/menu_config"
+        app:showAsAction="collapseActionView"
+        android:title="@string/config" />
+
+    <item android:id="@+id/menu_logout"
+        app:showAsAction="collapseActionView"
+        android:title="@string/logout" />
+
+</menu>
